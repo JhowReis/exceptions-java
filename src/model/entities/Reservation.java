@@ -10,7 +10,7 @@ public class Reservation {
 	private Date checkIn;
 	private Date checkOut;
 	
-	private static SimpleDateFormat sdf = new SimpleDateFormat("DD/MM/YYY");
+	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyy");
 	
 	public Reservation() {
 		
@@ -54,8 +54,8 @@ public class Reservation {
 				+ sdf.format(checkIn)	
 				+ ", check-out: "
 				+ sdf.format(checkOut)
-				+ duration()
-				+ "nigths";
+				+ ", " + duration()
+				+ " nigths";  
 				
 	}
 	
